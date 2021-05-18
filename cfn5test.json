@@ -105,16 +105,15 @@
 				"apt-get install git \n",
 				"apt-get install -y nginx-full \n",
 				"apt-get install -y python3-venv build-essential python-dev \n",
-				"mkdir -p /home/ubuntu/edge \n",
-				"cd /home/ubuntu/edge", "\n",
+				"cd /home/ubuntu/", "\n",
 				"git clone https://github.com/bjarke-krysel/edge \n",
+				"cd edge \n",
 				"python3 -m venv env \n",
 				". env/bin/activate \n",
-				"cd edge \n",
 				"pip install -r requirements.txt \n",
-				"pip install -y flask \n",
-				"pip install -y wheel \n",
-				"pip install -y uwsgi \n",
+				"pip install flask \n",
+				"pip install wheel \n",
+				"pip install uwsgi \n",
 				"uwsgi --socket 0.0.0.0:5001 --protocol=http -w hello:app \n"
 				
 			]]}}
