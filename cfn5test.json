@@ -78,7 +78,7 @@
 				},
 				"commands": {					
 					"01_command": {
-						"command": "echo some_text > /home/ec2-user/tjuhej.txt"}
+						"command": "echo some_text > /home/ubuntu/tjuhej.txt"}
 				}						
 				,
 				"files": {
@@ -104,12 +104,11 @@
 				"apt-get install -y python3-pip \n",
 				"apt-get install git \n",
 				"sudo apt-get install -y nginx-full \n",
-				"mkdir /home/ubuntu/maindir \n",
-				"cd /home/ubuntu/maindir", "\n",
-				"git clone https://github.com/bjarke-krysel/main \n",
+				"cd /home/ubuntu/", "\n",
+				"git clone https://github.com/bjarke-krysel/edge \n",
 				"pip3 install flask \n",
-				"cd main \n",
-				"python3 -m app \n"
+				"cd edge \n",
+				"python3 -m hello \n"
 				
 			]]}}
 		}
