@@ -69,29 +69,6 @@
 
 	"myEC2": {
 		"Type": "AWS::EC2::Instance",
-		"Metadata": {
-			"AWS::CloudFormation::Init" : {
-				"configSets": {"myConfigSet": ["myConfig"]},
-				"myConfig": {
-				"packages": {"apt-get": {
-					"git": []}
-				},
-				"commands": {					
-					"01_command": {
-						"command": "echo some_text > /home/ubuntu/tjuhej.txt"}
-				}						
-				,
-				"files": {
-					"/home/ubuntu/new_dir/jubii.txt": {
-							"content": "Hello world",
-							"mode": "000660",
-							"owner": "root",
-							"group": "root"}
-				}
-				}
-			}
-		},
-		
 		"Properties": {
 			"ImageId": "ami-0ff338189efb7ed37",
 			"InstanceType": "t3.micro",
@@ -114,6 +91,7 @@
 				"pip install flask \n",
 				"pip install wheel \n",
 				"pip install uwsgi \n",
+				"uwsgi --ini mybest.ini \n",
 				"uwsgi --socket 0.0.0.0:5001 --protocol=http -w hello:app \n"
 				
 			]]}}
