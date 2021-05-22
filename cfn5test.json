@@ -92,7 +92,7 @@
 				"pip install wheel \n",
 				"pip install uwsgi \n",
 				"uwsgi --ini mybest.ini \n",
-				"uwsgi --socket 0.0.0.0:5001 --protocol=http -w hello:app \n"
+				"uwsgi --0.0.0.0:5001 --protocol=http -w hello:app \n"
 				
 			]]}}
 		}
