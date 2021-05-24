@@ -85,7 +85,7 @@
 				"apt-get install -y nginx-full \n",
 				"apt-get install -y python3-venv build-essential python-dev libssl-dev libffi-dev python3-setuptools \n",
 				"cd /home/ubuntu/", "\n",
-				"git clone https://github.com/bjarke-krysel/mybest \n",
+				"git clone -b nginx-test https://github.com/bjarke-krysel/mybest \n",
 				"cd mybest \n",
 				"python3 -m venv env \n",
 				". env/bin/activate \n",
