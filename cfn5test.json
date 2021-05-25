@@ -95,6 +95,7 @@
 				"pip install -r requirements.txt \n",
 				"pip install flask \n",
 				"uwsgi --ini mybest.ini \n",
+				"chown -R ubuntu:app-group env \n",
 				"nginx -c nginx.conf \n"
 				
 			]]}}
