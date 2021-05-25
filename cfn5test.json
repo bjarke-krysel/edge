@@ -78,6 +78,8 @@
 			"UserData": {"Fn::Base64": {"Fn::Join": ["", [
 				"#!/bin/bash \n",
 				"apt-get update \n",
+				"newgrp app-group \n",
+				"usermod -a -G app-group ubuntu \n",
 				"apt-get install -y python3-pip \n",
 				"apt-get install git \n",
 				"pip install wheel \n",
