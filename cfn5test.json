@@ -78,7 +78,7 @@
 			"UserData": {"Fn::Base64": {"Fn::Join": ["", [
 				"#!/bin/bash \n",
 				"apt-get update \n",
-				"newgrp app-group \n",
+				"addgroup app-group \n",
 				"usermod -a -G app-group ubuntu \n",
 				"apt-get install -y python3-pip \n",
 				"apt-get install git \n",
@@ -88,6 +88,7 @@
 				"apt-get install -y python3-venv build-essential python-dev libssl-dev libffi-dev python3-setuptools \n",
 				"cd /home/ubuntu/", "\n",
 				"git clone -b nginx-test https://github.com/bjarke-krysel/mybest \n",
+				"chown -R ubuntu:app-group mybest \n",
 				"cd mybest \n",
 				"python3 -m venv env \n",
 				". env/bin/activate \n",
