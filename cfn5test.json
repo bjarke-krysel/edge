@@ -91,10 +91,8 @@
 				". env/bin/activate \n",
 				"pip install -r requirements.txt \n",
 				"pip install flask \n",
-				"mv nginxconf /etc/nginx/sites-available \n",
-				"ln -s /etc/nginx/sites-available/mybest /etc/nginx/sites-enabled \n",
 				"uwsgi --ini mybest.ini \n",
-				"nginx reload \n"
+				"nginx -c nginx.conf \n"
 				
 			]]}}
 		}
