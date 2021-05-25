@@ -85,7 +85,7 @@
 				"pip install wheel \n",
 				"pip install uwsgi \n",				
 				"apt-get install -y nginx-full \n",
-				"apt-get install -y python3-venv build-essential python-dev libssl-dev libffi-dev python3-setuptools \n",
+				"apt-get install -y python3-venv \n",
 				"cd /home/ubuntu/", "\n",
 				"git clone -b nginx-test https://github.com/bjarke-krysel/mybest \n",
 				"chown -R ubuntu:app-group mybest \n",
