@@ -81,8 +81,6 @@
 				"addgroup app-group \n",
 				"usermod -a -G app-group ubuntu \n",
 				"apt-get install -y python3-pip \n",
-				"apt-get install git \n",
-				"pip install wheel \n",
 				"pip install uwsgi \n",				
 				"apt-get install -y nginx-full \n",
 				"apt-get install -y python3-venv \n",
