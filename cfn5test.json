@@ -94,9 +94,10 @@
 				". env/bin/activate \n",
 				"pip install -r requirements.txt \n",
 				"pip install flask \n",
-				"uwsgi --ini mybest.ini \n",
+				"systemctl stop nginx \n",
 				"chown -R ubuntu:app-group env \n",
-				"nginx -c /home/ubuntu/mybest/nginx.conf \n"
+				"nginx -c /home/ubuntu/mybest/nginx.conf \n",
+				"uwsgi --ini mybest.ini \n"
 				
 			]]}}
 		}
